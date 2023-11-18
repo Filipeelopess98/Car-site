@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Assets/logo-new.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Precision | Centro Automotivo </title>
+</head>
+<div id="background">
+    <img src="assets/fundooo.jpg" alt="">
+</div>
+<div id="app">
+    <header>
+        <nav class="navigationn">
+            <ul class="navigation">
+                <li>
+                    <a href="#" class="nav-link">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+    </header>
+    </nav>
+    <main>
+        <div class="main-info">
+            <img class="img-titule" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                src="Assets/logo-new.png" width="490px" alt="">
+            <p class="descrition" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800"
+                data-aos-easing="ease-in-out">
+                Conte com nossa equipe de mecânicos altamente qualificados para diagnosticar e corrigir problemas
+                mecânicos do seu veículo. Utilizamos tecnologia avançada para assegurar ótimas condições. Priorizamos
+                transparência em cada serviço. Entre em contato conosco e a nossa equipe
+                responderá prontamente.
+            </p>
+            <div class="button-contat" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800"
+                data-aos-easing="ease-in-out">
+                <button onclick="cliquenoBotao()" class="contato">
+                    Entre em contato
+                </button>
+            </div>
+        </div>
+        <img class="marioeluigi" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200"
+            src="assets/logo002.png" width="450px" alt="marioandluigi">
+        <div class="form-mask"></div>
+
+        <form class="fale" action="https://formsubmit.co/fehfeh.ff@gmail.com" method="POST">
+            <h3>Fale Conosco</h3>
+            <input type="text" placeholder="Seu nome">
+            <input type="tel" placeholder="Telefone">
+            <textarea placeholder="Digite seu problema" id="" cols="30" rows="10"></textarea>
+            <button onclick="sairformulario()">Enviar</button>
+        </form>
+
+
+    </main>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    let formulario = document.querySelector(".fale")
+    let mascara = document.querySelector(".form-mask")
+
+    function cliquenoBotao() {
+        formulario.style.left = "45px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sairformulario() {
+        formulario.style.left = "-405px"
+        mascara.style.visibility = "hidden"
+    }
+
+</script>
+
+
+</body>
+
+</html>
